@@ -1,0 +1,37 @@
+{
+  "ProjectName": "Mis Diez Segundos App",
+  "ProjectGuid": "c5cf5e27-6301-4dbf-a667-6400c56d0f8f",
+  "projectVersion": 1,
+  "AppIdentifier": "com.telerik.MisDiezSegundosApp",
+  "DisplayName": "Mis Diez Segundos App",
+  "Author": "",
+  "Description": "",
+  "BundleVersion": "1.0",
+  "AndroidVersionCode": "1",
+  "iOSDeviceFamily": [
+    "1",
+    "2"
+  ],
+  "iOSBackgroundMode": [],
+  "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
+  "FrameworkVersion": "3.5.0",
+  "AndroidPermissions": [],
+  "DeviceOrientations": [
+    "Portrait",
+    "Landscape"
+  ],
+  "AndroidHardwareAcceleration": "false",
+  "iOSStatusBarStyle": "Default",
+  "Framework": "Cordova",
+  "WP8TileTitle": "",
+  "WP8Publisher": "",
+  "WP8Capabilities": [],
+  "WP8Requirements": [],
+  "WP8PublisherID": "{43123632-3b8b-4e1e-9f9e-8f28032a6aad}",
+  "WP8ProductID": "{9fd96ac9-6719-47a4-b180-e92e59f488f4}",
+  "WP8SupportedResolutions": [
+    "ID_RESOLUTION_WVGA",
+    "ID_RESOLUTION_WXGA",
+    "ID_RESOLUTION_HD720P"
+  ]
+}
