@@ -7,34 +7,39 @@
     </div>
     <form id="signUp">
         <ul id="signup-form" data-role="listview" data-style="inset">
+            <!--
             <li>
                 <input type="text" id="signupName" data-bind="value: DisplayName" placeholder="Name" required/>
             </li>
+            -->
             <li>
-                <input type="email" id="signupEmail" data-bind="value: Email" placeholder="Email"/>
+                <input type="email" name="signupEmail" id="signupEmail" data-bind="value: Email" placeholder="Email" required data-required-msg="Email is required" data-email-msg="Email format is not valid"/>
             </li>
             <li>
-                <input type="text" id="signupUsername" data-bind="value: Username" placeholder="Username" required/>
+                <input type="text" name="signupUsername" id="signupUsername" data-bind="value: Username" data-message="" placeholder="Username" required data-required-msg="Username is required"/>
             </li>
             <li>
-                <input type="password" id="signupPassword" data-bind="value: Password" placeholder="Password" required/>
+                <input type="password" name="signupPassword" id="signupPassword" data-bind="value: Password" data-message="" placeholder="Password" required data-required-msg="Password is required" validationMessage="Password must be at least 5 characters"/>
             </li>
             <li>
-                <input type="date" id="signupBirthDatePicker" data-bind="value: BirthDate"/>
+                <input type="date" name="signupBirthDatePicker" id="signupBirthDatePicker" data-bind="value: BirthDate" required data-required-msg="Please provide your birth date" validationMessage="Must be at least 18 for this service"/>
+                <span name="signupBirthDatePickerErrorMsg" id="signupBirthDatePickerErrorMsg" class="k-icon k-warning">123</span>
             </li>
             <li class="select-wrp">
-                <select id="signupGenderPicker" data-bind="value: Gender" onchange="app.Signup.onSelectChange(this)">
-                    <option value="0" selected>Gender</option>
-                    <option value="1">Male</option>
-                    <option value="2">Female</option>
+                <select name="signupGenderPicker" id="signupGenderPicker" data-bind="value: Gender" onchange="app.Signup.onSelectChange(this)" required data-required-msg="Please select a gender">
+                    <option selected value="">Gender</option>
+                    <option value="M">Male</option>
+                    <option value="F">Female</option>
                 </select>
             </li>
+            <!--
             <li class="txtarea-wrp">
                 <textarea id="signupInfo" data-bind="value: About" placeholder="About">User account created from the hybrid app.</textarea>
             </li>
+            -->
         </ul>
     </form>
-    <div id="signupBtnWrp" class="signup-btn-wrp disabled">
+    <div id="signupBtnWrp" class="signup-btn-wrp">
         <a class="btn btn-signup" data-role="button" data-bind="click: signup">Register</a>
     </div>
 </div>
